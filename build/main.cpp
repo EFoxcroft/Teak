@@ -17,6 +17,7 @@ extern "C"
 
 int main()
 {
+    // object files not yet added
 /*
     lua_State* L = luaL_newstate();
     luaL_openlibs(L);
