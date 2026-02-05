@@ -8,9 +8,9 @@ using namespace std;
 
 extern "C"
 {
-    // #include "../lua.h"
-    // #include "../lualib.h"
-    // #include "../lauxlib.h"
+    #include "../lua_548/lua.h"
+    #include "../lua_548/lualib.h"
+    #include "../lua_548/lauxlib.h"
 }
 
 #define lua_version "Lua 5.4"
