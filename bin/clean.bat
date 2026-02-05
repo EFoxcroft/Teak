@@ -1,4 +1,5 @@
 @echo off
 cd
-del *.exe
+dir
+del bin\*.exe
 echo cleaned

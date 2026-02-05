@@ -21,15 +21,15 @@ parse_args = function()
 end
 local build_args = parse_args()
 
-local main_cpp   <const> = "build/main.cpp"
-local main_out   <const> = "bin/main"
-local local_path <const> = "lua_548/o/*.o"
+local main_cpp   <const> = "build\\main.cpp"
+local main_out   <const> = "bin\\main"
+local local_path_win <const> = "lua_548/o/win/*.o"
 
 local build_project <const> =
 {
-  "g++ -Wall -Werror -Wextra -pedantic-errors -o " .. main_out .. ".exe " .. local_path .. ' '.. main_cpp,
+  "g++ -Wall -Werror -Wextra -pedantic-errors -o " .. main_out .. ".exe " .. local_path_win .. ' '.. main_cpp,
   "call \"" .. main_out .. ".exe\"",
-  "call bin/clean",
+  "del bin\\*.exe",
   "linux build",
   "linux build and run",
   "linux build run and clean",

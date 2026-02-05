@@ -4,8 +4,8 @@ local cmds =
 [[
 b build - rebuild the project
 r run   - build && run the generated executable
+c clean - build && run && delete the executable
 ]]
---c clean - build && run && delete the executable
 io.write(cmds, '\n')
 
 io.write("each step can be combined as initials in any combination : b, br, bc and so on\n")
