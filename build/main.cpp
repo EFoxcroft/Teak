@@ -13,31 +13,24 @@ extern "C"
     #include "../lua_548/lauxlib.h"
 }
 
-#define lua_version "Lua 5.4"
-
 int main()
 {
-    // object files not yet added
-/*
     lua_State* L = luaL_newstate();
     luaL_openlibs(L);
 
-    luaL_dostring(L, "local mango = 6 + 9 + 6 * 9 ; io.write(mango, '\\n')");
+    luaL_dostring(L, "local demo = 6 + 9 + 6 * 9 ; io.write(demo, '\\n')");
 
-    char strong[] = "a = 4 ; b = 3.0 ; c = a * b";
-    luaL_dostring(L, strong);
+    char literal[] = "a = 4 ; b = 3.0 ; c = a * b";
+    luaL_dostring(L, literal);
     lua_getglobal(L, "a");
-    int i = (int)lua_tonumber(L, -1);
+    int var_L = (int)lua_tonumber(L, -1);
     lua_getglobal(L, "b");
-    double j = (double)lua_tonumber(L, -1);
+    double var_R = (double)lua_tonumber(L, -1);
     lua_getglobal(L, "c");
-    int ij = lua_tonumber(L, -1);
-    printf("%d * %lf = %d\n", i, j, ij);
+    int vars = lua_tonumber(L, -1);
+    printf("%d * %lf = %d\n", var_L, var_R, vars);
 
     lua_close(L);
-*/
-
-    cout << lua_version << '\n';
 
     return 0;
 }
