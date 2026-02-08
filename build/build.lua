@@ -1,5 +1,10 @@
 assert(_VERSION == "Lua 5.4", "project is optimised for lua 5.4.8 and is not guaranteed to work with other versions")
 
+os.execute("nasm --version")
+os.execute("objdump --version")
+os.execute("gcc --version")
+os.execute("g++ --version")
+
 if (arg[1] == nil) then dofile("build/build_docs.lua") ; io.write("awaiting argument, type exit to exit :\n") ; arg[1] = io.read() end
 end_build  = function() io.write(arg[1], " successful\n") ; os.exit() end
 if  arg[1]  == "exit" or arg[1] == "90" then end_build() end
