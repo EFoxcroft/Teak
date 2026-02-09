@@ -1,0 +1,19 @@
+Teak
+
+js
+lua 548
+c()
+bat/bash
+x86_64
+
+init
+  lua_console
+  ecs
+run
+  while(!end) { fps(60).update() }
+ret
+  ~ecs()
+
+? js server access 
+
+main.cpp -> console.lua
