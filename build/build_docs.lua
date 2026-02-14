@@ -16,4 +16,4 @@ local versions =
 lua 5.4.8
 g++ 8.1.0
 ]]
-io.write(versions, '\n')
+--io.write(versions, '\n')
